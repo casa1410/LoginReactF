@@ -14,7 +14,7 @@ const Home = ({ correoUsuario }) => {
     nombre: '',
     mantenimientoin: '',
     mantenimientomu: '',
-    servicio '',
+    servicio: '',
     solicitud: '',
     ubicacion: '',
     fecha: ''
