@@ -130,10 +130,10 @@ const Home = ({ correoUsuario }) => {
                 </select>
 
                 <select class="form-select" required aria-label="Default select example" name='servicio' className='form-control mb-3' onChange={capturarInputs} value={user.servicio}>
-                  <option selected>Seleccione un trabajo de mueble</option>
-                  <option value='Aseo'>Aire acondicionado</option>
-                  <option value='Transporte'>Archivador</option>
-                  <option value='Vigilancia'>Puesto de trabajo</option>
+                  <option selected>Seleccione un servicio</option>
+                  <option value='Aseo'>Aseo</option>
+                  <option value='Transporte'>Transporte</option>
+                  <option value='Vigilancia'>Vigilancia</option>
                 </select>
 
                 <textarea class="form-control" name="solicitud" rows="3" placeholder='Descripción de la solicitud' onChange={capturarInputs} value={user.solicitud}></textarea>
