@@ -134,7 +134,7 @@ const Home = ({ correoUsuario }) => {
                   <option value='Vigilancia'>Vigilancia</option>
                 </select>
 
-                <textarea class="form-control" name="solicitud" rows="3" placeholder='Descripción de la solicitud' onChange={capturarInputs} value={user.solicitud}></textarea>
+                <textarea class="form-control" name="solicitud" required rows="3" placeholder='Descripción de la solicitud' onChange={capturarInputs} value={user.solicitud}></textarea>
                 <br />
 
                 <input type="text" name='ubicacion' required className='form-control mb-3' placeholder='Ingresa la ubicación dentro de la empresa' onChange={capturarInputs} value={user.ubicacion} />
