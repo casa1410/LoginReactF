@@ -110,28 +110,31 @@ const Home = ({ correoUsuario }) => {
 
                 {/*<input type="text" name='mantenimientoin' className='form-control mb-3' placeholder='Ingresa la mantenimientoin del usuario' onChange={capturarInputs} value={user.mantenimientoin} />*/}
 
-                <select class="form-select" required aria-label="Default select example" name='mantenimientoin' className='form-control mb-3' onChange={capturarInputs} value={user.mantenimientoin}>
+                <select class="form-select" required aria-label="Default select example" required name='mantenimientoin' className='form-control mb-3' onChange={capturarInputs} value={user.mantenimientoin}>
                   <option selected>Seleccione un trabajo de inmueble</option>
                   <option value='Baños'>Baños</option>
                   <option value='Cielo raso'>Cielo raso</option>
                   <option value='Eléctrico'>Eléctrico</option>
                   <option value='Pared'>Pared</option>
                   <option value='Puerta'>Puerta</option>
+                  <option value=''>Ninguna de las anteriores</option>
                 </select>
 
-                <select class="form-select" required aria-label="Default select example" name='mantenimientomu' className='form-control mb-3' onChange={capturarInputs} value={user.mantenimientomu}>
+                <select class="form-select" required aria-label="Default select example" required name='mantenimientomu' className='form-control mb-3' onChange={capturarInputs} value={user.mantenimientomu}>
                   <option selected>Seleccione un trabajo de mueble</option>
                   <option value='Aire acondicionado'>Aire acondicionado</option>
                   <option value='Archivador'>Archivador</option>
                   <option value='Puesto de trabajo'>Puesto de trabajo</option>
                   <option value='Silla'>Silla</option>
+                  <option value=''>Ninguna de las anteriores</option>
                 </select>
 
-                <select class="form-select" required aria-label="Default select example" name='servicio' className='form-control mb-3' onChange={capturarInputs} value={user.servicio}>
+                <select class="form-select" required aria-label="Default select example" required name='servicio' className='form-control mb-3' onChange={capturarInputs} value={user.servicio}>
                   <option selected>Seleccione un servicio</option>
                   <option value='Aseo'>Aseo</option>
                   <option value='Transporte'>Transporte</option>
                   <option value='Vigilancia'>Vigilancia</option>
+                  <option value=''>Ninguna de las anteriores</option>
                 </select>
 
                 <textarea class="form-control" name="solicitud" required rows="3" placeholder='Descripción de la solicitud' onChange={capturarInputs} value={user.solicitud}></textarea>
