@@ -11,7 +11,6 @@ const Home = ({ correoUsuario }) => {
 
   const valorInicial = {
     uid: -1,
-    nombre: '',
     mantenimientoin: '',
     mantenimientomu: '',
     servicio: '',
@@ -108,7 +107,6 @@ const Home = ({ correoUsuario }) => {
           <form onSubmit={guardarDatos}>
             <div className='card card-body'>
               <div className='form-group'>
-                <input type="text" name='nombre' required className='form-control mb-3' placeholder='Ingresa el nombre del usuario' onChange={capturarInputs} value={user.nombre} />
 
                 {/*<input type="text" name='mantenimientoin' className='form-control mb-3' placeholder='Ingresa la mantenimientoin del usuario' onChange={capturarInputs} value={user.mantenimientoin} />*/}
 
@@ -158,7 +156,6 @@ const Home = ({ correoUsuario }) => {
               {
                 lista.map(list => (
                   <div key={list.id}>
-                    <p>Nombre: {list.nombre}</p>
                     <p>Mantenimiento inmueble: {list.mantenimientoin}</p>
                     <p>Mantenimiento mueble: {list.mantenimientomu}</p>
                     <p>Servicios: {list.servicio}</p>
