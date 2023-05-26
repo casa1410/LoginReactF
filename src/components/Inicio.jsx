@@ -1,17 +1,18 @@
-import React from 'react'
-import Iinicio from '../images/Inicio.png'
-import '../Inicio.css'
-
+import React from "react";
+import Iinicio from "../images/Inicio.jpg";
+import "../Inicio.css";
 
 const Inicio = () => {
   return (
     <div>
-      <br /><br /><br />
-      <div id='inicio'>
-        <img id='imagen' src={Iinicio} alt=''/>
+      <br />
+      <br />
+      <br />
+      <div id="inicio">
+        <img id="imagen" src={Iinicio} alt="" />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Inicio
+export default Inicio;
